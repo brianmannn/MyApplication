@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
             //The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent listAllIntent = new Intent(MainActivity.this, ListOfAllC.class);
+                Intent listAllIntent = new Intent(MainActivity.this, ListOfPoolC.class);
                 startActivity(listAllIntent);
             }
         });

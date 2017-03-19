@@ -21,7 +21,9 @@
             android:name=".YogaInfo"
             android:label="@string/title_activity_yoga_info"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".PilatiesInfo"></activity>
+        <activity android:name=".PilatiesInfo" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".ListOfPoolC"></activity>
     </application>
 
 </manifest>
