@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TestingAdapters</string>
+    <string name="title_activity_yoga_info">YogaInfo</string>
 </resources>

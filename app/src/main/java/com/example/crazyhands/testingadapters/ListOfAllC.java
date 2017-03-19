@@ -21,8 +21,8 @@ public class ListOfAllC extends AppCompatActivity {
 
         // Create an ArrayList of ClistItems objects
         final ArrayList<List_item> ListItems = new ArrayList<List_item>();
-        ListItems.add(new List_item("Donut", "8.00", MainActivity.class));
-        ListItems.add(new List_item("Eclair", "9.00", MainActivity.class));
+        ListItems.add(new List_item("YOGA", "8.00", YogaInfo.class));
+        ListItems.add(new List_item("PILaties", "9.00", PilatiesInfo.class));
 
 
         // Create an {@link SimpleListAdapter}, whose data source is a list of
@@ -40,17 +40,10 @@ public class ListOfAllC extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 List_item item = ListItems.get(position);
 
-                Context context = getApplicationContext();
-                CharSequence text = "Hello toast!";
-                int duration = Toast.LENGTH_SHORT;
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
-
                 Intent newIntent = new Intent(ListOfAllC.this, item.getActivityToName());
                 startActivity(newIntent);
 
                 //mMediaPlayer = MediaPlayer.create(getActivity(), word.getAudioResourceId());
-
 
 
             }
