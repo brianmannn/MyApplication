@@ -54,9 +54,18 @@ public class SimpleListAdapter extends ArrayAdapter<List_item> {
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.NameOfItem);
-        // Get the version name from the current AndroidFlavor object and
+        // Get the C name from the current List_item object and
         // set this text on the name TextView
         nameTextView.setText(currentListItem.getCname());
+
+
+        // Find the TextView in the list_item.xml layout with the ID version_name
+        TextView timeTextView = (TextView) listItemView.findViewById(R.id.timeOfItem);
+
+        // Get the C time from the current List_item object and
+        // set this text on the time TextView
+        timeTextView.setText(currentListItem.getCtime());
+
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView

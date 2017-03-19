@@ -7,13 +7,15 @@ package com.example.crazyhands.testingadapters;
 public class List_item {
 
     private String mCname;
-
-    public List_item(String CName){
+    private String mCtime;
+    public List_item(String CName, String CTime){
         mCname = CName;
+        mCtime = CTime;
     }
     public String getCname() {
         return mCname;
     }
 
+    public String getCtime () {return mCtime;}
 
 }
