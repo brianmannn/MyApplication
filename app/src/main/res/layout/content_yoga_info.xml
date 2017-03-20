@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,8 +8,30 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.crazyhands.testingadapters.YogaInfo"
     tools:showIn="@layout/activity_yoga_info">
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="YOGA INFO HERE"/>
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOGA INFO HERE"
+            android:padding="20dp"
+            android:id="@+id/name"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="time it's on here"
+            android:padding="20dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'll go to that!"
+            android:layout_margin="20dp"
+            android:id="@+id/BookingYogaButton"
+            />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

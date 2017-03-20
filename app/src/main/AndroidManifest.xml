@@ -23,6 +23,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".PilatiesInfo" />
         <activity android:name=".Main2Activity" />
+        <activity android:name=".bookedYoga"></activity>
     </application>
 
 </manifest>
