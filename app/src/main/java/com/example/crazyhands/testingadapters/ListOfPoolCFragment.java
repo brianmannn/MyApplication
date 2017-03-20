@@ -32,6 +32,7 @@ public class ListOfPoolCFragment extends Fragment {
         final ArrayList<List_item> ListItems = new ArrayList<List_item>();
         ListItems.add(new List_item("wingchun", "0.00", YogaInfo.class));
         ListItems.add(new List_item("gummybears", "22.00", PilatiesInfo.class));
+        ListItems.add(new List_item("aqua robics", "15.00", PilatiesInfo.class));
 
 
         // Create an {@link SimpleListAdapter}, whose data source is a list of

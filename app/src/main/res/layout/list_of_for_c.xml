@@ -20,7 +20,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.crazyhands.testingadapters.ListOfAllC">
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find a class"
+        android:layout_gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
     <android.support.design.widget.TabLayout
         android:id="@+id/sliding_tabs"
         android:layout_width="match_parent"
